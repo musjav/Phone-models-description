@@ -1,0 +1,120 @@
+body {
+  background-color: #eef2f5;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#phone-ui {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px 40px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+#phone-ui h2 {
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.select-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.select-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.select-group select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fdfdfd;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.select-group select:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 0 3px rgba(0, 120, 215, 0.15);
+  outline: none;
+}
+
+#details {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.phone-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.phone-card:hover {
+  transform: translateY(-4px);
+}
+
+.phone-card h3 {
+  margin: 0 0 16px;
+  color: #0078d7;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.phone-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phone-card li {
+  margin-bottom: 10px;
+  font-size: 0.97rem;
+  color: #444;
+  background: #f7f9fc;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.phone-card li:hover {
+  background: #e8f0fb;
+}
+
+@media (max-width: 600px) {
+  #phone-ui {
+    padding: 24px;
+  }
+
+  .select-group {
+    min-width: 100%;
+  }
+
+  .phone-card {
+    padding: 16px;
+  }
+}
